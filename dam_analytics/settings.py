@@ -78,11 +78,11 @@ import os
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('POSTGRES_DB', 'dam_db'),
-        'USER': os.environ.get('POSTGRES_USER', 'dam_user'),
-        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'dam_password'),
-        'HOST': 'db',
-        'PORT': '5433',
+        'NAME': 'dam_analytics_db',
+        'USER': 'pranav_db',
+        'PASSWORD': 'pranav',
+        'HOST': 'localhost',  # or the IP address of your database server
+        'PORT': '5432',       # default PostgreSQL port
     }
 }
 
